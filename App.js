@@ -1,21 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import CustomButton from './app/element/CustomButton';
+import CustomAvatar from './app/element/CustomAvatar';
+import CustomBadge from './app/element/CustomBadge';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import CustomBottomSheet from './app/element/CustomBottomSheet';
+import CustomCheckBox from './app/element/CustomCheckBox';
+import CustomFab from './app/element/CustomFab';
+import CustomHeader from './app/element/CustomHeader';
+import CustomIcon from './app/element/CustomIcon';
+import CustomInput from './app/element/CustomInput';
+import CustomListItem from './app/element/CustomListItem';
+import CustomSpeedDial from './app/element/CustomSpeedDial';
+import CustomTabs from './app/element/CustomTabs';
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <CustomTabs></CustomTabs>
+    </SafeAreaProvider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
