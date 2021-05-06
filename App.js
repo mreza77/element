@@ -18,7 +18,7 @@ import CustomTabs from './app/element/CustomTabs';
 export default function App() {
   return (
     <SafeAreaProvider>
-      <CustomTabs></CustomTabs>
+      <CustomButton></CustomButton>
     </SafeAreaProvider>
   );
 }
